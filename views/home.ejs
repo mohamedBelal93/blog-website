@@ -1,0 +1,32 @@
+<%- include("parials/header") -%>
+
+
+
+
+<h2><%=startingContent%></h2>
+
+
+<h1 style="color:#28df99" >Startups News</h1>
+
+
+
+<% for (var i = 0; i < content.length; i++) {%>
+
+  <h2 style="color:#91d18b" ><%= content[i].title %></h2>
+<p>   <%= content[i].body.substr(0, 30) + "...."%>
+       <a href="/posts/<%= content[i].title%>" >Read more</a>
+     </p>
+
+
+<%}%>
+
+
+
+
+
+
+
+
+
+
+<%- include("parials/footer") -%>
